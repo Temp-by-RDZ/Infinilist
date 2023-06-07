@@ -11,7 +11,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 import java.text.SimpleDateFormat
 import java.util.*
 
-/** Главная VM для сегмента Picture */
+/** Главная VM */
 class MainViewModel(
 	private val dataLive: SingleLiveData<StatusProcess> = SingleLiveData(),
 	private val repository: Repository = RepositoryExecutor(),
@@ -21,11 +21,12 @@ class MainViewModel(
 
 	fun getData(): LiveData<StatusProcess> = dataLive
 
-	/** Подготовка запроса*/
+	/** Подготовка запроса */
 	fun initialize() {
 		request(100)
 	}
 
+	/** Подготовка запроса на следующию группу */
 	fun more() {
 		request(50)
 	}

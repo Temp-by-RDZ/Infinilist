@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- my preferred dimens style -->
     <dimen name="t_basis">20sp</dimen>
     <dimen name="t_head_size">30sp</dimen>
     <dimen name="string_margin">10dp</dimen>
@@ -19,7 +20,6 @@
     <!-- colors -->
     <color name="primary">#785447</color>
     <color name="primaryDark">#5B3F36</color>
-
-    <!-- dimensions -->
+    <!-- app dimensions -->
 
 </resources>
